@@ -1,10 +1,10 @@
 import React from 'react';
-import './App.css';
+import SideBar from './components/sidebar';
 
 function App() {
   return (
-    <div className="text-center">
-      Test
+    <div>
+      <SideBar />
     </div>
   );
 }
