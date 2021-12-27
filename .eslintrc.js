@@ -27,5 +27,13 @@ module.exports = {
   rules: {
     'react/jsx-filename-extension': ['warn', { extensions: ['.tsx'] }],
     'linebreak-style': 0,
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        ts: 'never',
+        tsx: 'never',
+      },
+    ],
   },
 };
