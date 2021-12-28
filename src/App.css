@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .controlbar {
+        @apply -left-20 md:left-0;
+    }
+    .controlbar-menu {
+        @apply fixed top-0 right-0 w-16 m-0 text-white md:hidden;
+    }
+    .controlbar-mobile {
+        @apply md:hidden;
+    }
+    .controlbar-mobile-button {
+        @apply md:hidden
+        hover:bg-secondary hover:text-white
+        transition-all duration-300 ease-linear
+        cursor-pointer;
+    }
+    .controlbar-icon {
+        @apply relative flex items-center justify-center
+        h-14 w-14 mt-2 mb-2 mx-auto shadow-lg
+        bg-tertiary text-white
+        hover:bg-secondary hover:text-white
+        rounded-3xl hover:rounded-xl
+        transition-all duration-300 ease-linear
+        cursor-pointer;
+    }
+    .controlbar-tooltip {
+        @apply absolute w-auto p-2 m-2 min-w-max left-14
+        rounded-md shadow-md
+        text-white bg-surface
+        text-sm font-bold
+        transition-all duration-100 scale-0 origin-left;
+      }
+}
