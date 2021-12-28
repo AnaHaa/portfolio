@@ -4,7 +4,10 @@ import localization from '../localization.json';
 import './home.css';
 import image from '../image.png';
 
+// Home page
+// Show information and image
 function Home() {
+  // Import text for home page
   const { home } = localization;
   const {
     header, firstParagraph, secondParagraph, thirdParagraph,
