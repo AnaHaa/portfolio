@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .home-info {
+        @apply md:ml-32 md:mt-16;
+    }
+}

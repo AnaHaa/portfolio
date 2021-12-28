@@ -3,7 +3,9 @@
         "title": "Developer"
     },
     "home": {
-        "header": "Myself",
-        "text": "Info here"
+        "header": "Hello",
+        "firstParagraph": "My name is Antti-Pekka Haarala",
+        "secondParagraph": "I'm a 4th year Software Engineering student. I am writing my thesis about Functional and Object-oriented programming in TypeScript",
+        "thirdParagraph": "Backend developer based in Finland, Tampere"
     }
 }

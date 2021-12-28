@@ -73,9 +73,9 @@ function ControlBar() {
   const { title } = navigation;
 
   return (
-    <div>
+    <div className="font-lora">
       <div className="fixed top-0 h-screen w-20 m-0 flex flex-col bg-background text-white shadow-lg controlbar">
-        <div className="relative flex flex-col justify-center items-center text-2xl bg-black w-20 h-32">
+        <div className="relative flex flex-col justify-center items-center text-2xl bg-tertiary w-20 h-32">
           <h3 className="text-secondary">Antti</h3>
           <p className="text-xs">{title}</p>
         </div>
@@ -97,28 +97,63 @@ function ControlBar() {
       </div>
       <button
         data-dropdown-toggle="dropdown"
-        className="controlbar-menu fixed"
+        className="controlbar-menu"
         onClick={() => setStatus(!status)}
       >
         <ControlBarIcon icon={ControlBarMenu(status)} text="Menu" />
       </button>
+      <div className="flex flex-col pb-6 controlbar-mobile bg-background md:hidden border-b-surface border-b-2">
+        <h1 className="text-6xl pt-2 pl-2 controlbar-mobile text-secondary">Haarala Antti</h1>
+        <h2 className="text-4xl pl-2 controlbar-mobile text-white">{title}</h2>
+      </div>
       {!status
         && (
-        <div className="controlbar-mobile bg-black">
-          <div className="flex flex-col items-center mb-6 controlbar-mobile">
-            <h1 className="text-6xl controlbar-mobile text-secondary">Haarala Antti</h1>
-            <h2 className="text-4xl controlbar-mobile text-white">{title}</h2>
-          </div>
-          <div className="w-screen flex flex-col bg-background text-white text-3xl controlbar-mobile">
-            <button className="p-2 border-b-2 border-b-surface controlbar-mobile-button" onClick={() => setComponent('Home')}>About</button>
-            <button className="p-2 border-b-2 border-b-surface controlbar-mobile-button" onClick={() => setComponent('Skills')}>Skills</button>
-            <button className="p-2 border-b-2 border-b-surface controlbar-mobile-button" onClick={() => setComponent('Education')}>Education</button>
-            <button className="p-2 border-b-2 border-b-surface controlbar-mobile-button" onClick={() => setComponent('Experience')}>Experience</button>
-            <button className="p-2 border-b-surface controlbar-mobile-button" onClick={() => setComponent('Contact')}>Contact</button>
+        <div className="controlbar-mobile bg-black w-screen">
+          <div className="w-screen flex flex-col bg-surface text-white text-3xl controlbar-mobile">
+            <button
+              className="p-2 border-b-2 border-b-background controlbar-mobile-button"
+              onClick={() => {
+                setComponent('Home'); setStatus(!status);
+              }}
+            >
+              About
+            </button>
+            <button
+              className="p-2 border-b-2 border-b-background controlbar-mobile-button"
+              onClick={() => {
+                setComponent('Skills'); setStatus(!status);
+              }}
+            >
+              Skills
+            </button>
+            <button
+              className="p-2 border-b-2 border-b-background controlbar-mobile-button"
+              onClick={() => {
+                setComponent('Education'); setStatus(!status);
+              }}
+            >
+              Education
+            </button>
+            <button
+              className="p-2 border-b-2 border-b-background controlbar-mobile-button"
+              onClick={() => {
+                setComponent('Experience'); setStatus(!status);
+              }}
+            >
+              Experience
+            </button>
+            <button
+              className="p-2 border-b-2 border-b-secondary controlbar-mobile-button"
+              onClick={() => {
+                setComponent('Contact'); setStatus(!status);
+              }}
+            >
+              Contact
+            </button>
           </div>
         </div>
         )}
-      <div className="bg-surface h-screen w-screen">
+      <div className="h-screen w-screen">
         {ControlComponent(component)}
       </div>
     </div>

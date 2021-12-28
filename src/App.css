@@ -7,7 +7,7 @@
         @apply -left-20 md:left-0;
     }
     .controlbar-menu {
-        @apply fixed top-0 right-0 w-16 m-0 text-white md:hidden;
+        @apply absolute top-0 right-0 w-16 m-0 text-white md:hidden;
     }
     .controlbar-mobile {
         @apply md:hidden;
