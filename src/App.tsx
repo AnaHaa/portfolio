@@ -81,7 +81,7 @@ function ControlBar() {
   const { title } = navigation;
 
   return (
-    <div className="font-montserrat">
+    <div className="font-montserrat w-screen">
       <div className="fixed top-0 h-screen w-20 m-0 flex flex-col bg-background text-white shadow-lg controlbar">
         <div className="relative flex flex-col justify-center items-center text-2xl bg-black w-20 h-32">
           <h3 className="text-secondary">Antti</h3>

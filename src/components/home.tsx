@@ -16,7 +16,7 @@ function Home() {
   return (
     <div className="w-screen h-screen flex flex-wrap justify-evenly">
       <div className="home-info md:ml-32 md:mt-16 flex-1 p-16">
-        <h1 className="text-8xl text-secondary font-semibold">
+        <h1 className="text-8xl text-secondary font-semibold w-56">
           {header}
         </h1>
         <div>
@@ -32,7 +32,7 @@ function Home() {
         </div>
       </div>
       <div className="home-info md:mt-32 md:mr-32 flex-none">
-        <img src={image} alt="Haarala Antti" className="object-contain w-8/12 md:w-11/12 ml-auto mr-auto mb-16 rounded-xl" />
+        <img src={image} alt="Haarala Antti" className="object-contain w-80 md:w-11/12 ml-auto mr-auto mb-16 rounded-xl" />
       </div>
     </div>
   );

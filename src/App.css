@@ -10,7 +10,7 @@
         @apply absolute top-0 right-0 w-16 m-0 text-white md:hidden;
     }
     .controlbar-mobile {
-        @apply md:hidden;
+        @apply md:hidden w-screen;
     }
     .controlbar-mobile-button {
         @apply md:hidden
