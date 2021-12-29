@@ -29,6 +29,8 @@ module.exports = {
       ],
       serif: ['Georgia'],
       lora: ['Lora', 'DM Mono', 'sans-serif', 'Arial'],
+      body: ['"Open Sans"'],
+      montserrat: ['Montserrat'],
     },
   },
   plugins: [],

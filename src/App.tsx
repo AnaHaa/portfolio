@@ -25,7 +25,7 @@ function ControlBarIcon({ icon, text = 'tooltip' }: any) {
   );
 }
 
-function ControlBarMenu(status: boolean) {
+function ControlBarMenuIcon(status: boolean) {
   if (status) {
     return (
       <AiOutlineMenu size="32" />
@@ -34,6 +34,14 @@ function ControlBarMenu(status: boolean) {
 
   return (
     <AiOutlineClose size="32" />
+  );
+}
+
+function ControlBarMenu({ icon }: any) {
+  return (
+    <div className="controlbar-icon group">
+      {icon}
+    </div>
   );
 }
 
@@ -73,9 +81,9 @@ function ControlBar() {
   const { title } = navigation;
 
   return (
-    <div className="font-lora">
+    <div className="font-montserrat">
       <div className="fixed top-0 h-screen w-20 m-0 flex flex-col bg-background text-white shadow-lg controlbar">
-        <div className="relative flex flex-col justify-center items-center text-2xl bg-tertiary w-20 h-32">
+        <div className="relative flex flex-col justify-center items-center text-2xl bg-black w-20 h-32">
           <h3 className="text-secondary">Antti</h3>
           <p className="text-xs">{title}</p>
         </div>
@@ -100,18 +108,18 @@ function ControlBar() {
         className="controlbar-menu"
         onClick={() => setStatus(!status)}
       >
-        <ControlBarIcon icon={ControlBarMenu(status)} text="Menu" />
+        <ControlBarMenu icon={ControlBarMenuIcon(status)} text="Menu" />
       </button>
-      <div className="flex flex-col pb-6 controlbar-mobile bg-background md:hidden border-b-surface border-b-2">
+      <div className="flex flex-col pb-6 controlbar-mobile bg-black md:hidden border-b-surface border-b-2">
         <h1 className="text-6xl pt-2 pl-2 controlbar-mobile text-secondary">Haarala Antti</h1>
         <h2 className="text-4xl pl-2 controlbar-mobile text-white">{title}</h2>
       </div>
       {!status
         && (
         <div className="controlbar-mobile bg-black w-screen">
-          <div className="w-screen flex flex-col bg-surface text-white text-3xl controlbar-mobile">
+          <div className="w-screen flex flex-col bg-background text-white text-3xl controlbar-mobile">
             <button
-              className="p-2 border-b-2 border-b-background controlbar-mobile-button"
+              className="p-2 border-b-2 border-b-surface controlbar-mobile-button"
               onClick={() => {
                 setComponent('Home'); setStatus(!status);
               }}
@@ -119,7 +127,7 @@ function ControlBar() {
               About
             </button>
             <button
-              className="p-2 border-b-2 border-b-background controlbar-mobile-button"
+              className="p-2 border-b-2 border-b-surface controlbar-mobile-button"
               onClick={() => {
                 setComponent('Skills'); setStatus(!status);
               }}
@@ -127,7 +135,7 @@ function ControlBar() {
               Skills
             </button>
             <button
-              className="p-2 border-b-2 border-b-background controlbar-mobile-button"
+              className="p-2 border-b-2 border-b-surface controlbar-mobile-button"
               onClick={() => {
                 setComponent('Education'); setStatus(!status);
               }}
@@ -135,7 +143,7 @@ function ControlBar() {
               Education
             </button>
             <button
-              className="p-2 border-b-2 border-b-background controlbar-mobile-button"
+              className="p-2 border-b-2 border-b-surface controlbar-mobile-button"
               onClick={() => {
                 setComponent('Experience'); setStatus(!status);
               }}
