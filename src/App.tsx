@@ -1,3 +1,4 @@
+/* eslint-disable no-alert */
 /* eslint-disable react/button-has-type */
 import React, { useState } from 'react';
 import './App.css';
