@@ -19,13 +19,13 @@ function Home() {
           {header}
         </h1>
         <div className="md:border-b-0 pb-16 border-b-2">
-          <p className="mt-16 mb-16 text-2xl text-clip break-words text-white">
+          <p className="mt-16 mb-16 text-xl md:text-2xl text-clip break-words text-white">
             {firstParagraph}
           </p>
-          <p className="mt-16 mb-16 text-2xl text-clip break-words text-white">
+          <p className="mt-16 mb-16 text-xl md:text-2xl text-clip break-words text-white">
             {secondParagraph}
           </p>
-          <p className="mt-16 text-2xl text-clip break-words text-white">
+          <p className="mt-16 text-xl md:text-2xl text-clip break-words text-white">
             {thirdParagraph}
           </p>
         </div>
