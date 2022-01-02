@@ -1,7 +1,6 @@
 /* eslint-disable react/button-has-type */
 import React from 'react';
 import localization from '../localization.json';
-import './home.css';
 import image from '../image.png';
 
 // Home page
@@ -14,12 +13,12 @@ function Home() {
   } = home;
 
   return (
-    <div className="w-screen h-screen flex flex-wrap justify-evenly">
+    <div className="flex flex-wrap justify-evenly md:border-b-2">
       <div className="home-info md:ml-32 md:mt-16 flex-1 p-16">
         <h1 className="text-8xl text-secondary font-semibold w-56">
           {header}
         </h1>
-        <div>
+        <div className="md:border-b-0 pb-16 border-b-2">
           <p className="mt-16 mb-16 text-2xl text-clip break-words text-white">
             {firstParagraph}
           </p>

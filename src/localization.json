@@ -4,8 +4,8 @@
     },
     "home": {
         "header": "Hello",
-        "firstParagraph": "My name is Antti-Pekka Haarala",
-        "secondParagraph": "I'm a 4th year Software Engineering student. I am writing my thesis about Functional and Object-oriented programming in TypeScript",
-        "thirdParagraph": "Backend developer based in Finland, Tampere"
+        "firstParagraph": "My name is Antti-Pekka Haarala and I am a developer based in Tampere",
+        "secondParagraph": "I'm a 4th year Software Engineering student in Tampere University of Applied Sciences. I am simultaneously working as a backend developer using technologies such as TypeScript and Azure",
+        "thirdParagraph": "I am writing my thesis about Functional programming and Object-oriented programming in TypeScript"
     }
 }

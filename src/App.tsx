@@ -90,16 +90,16 @@ function ControlBar() {
         <button onClick={() => setComponent('Home')}>
           <ControlBarIcon icon={<AiFillHome size="32" />} text="About" />
         </button>
-        <button onClick={() => setComponent('Skills')}>
+        <button onClick={() => alert('WIP: This site does not exist yet.')}>
           <ControlBarIcon icon={<BsFillGearFill size="32" />} text="Skills" />
         </button>
-        <button onClick={() => setComponent('Education')}>
+        <button onClick={() => alert('WIP: This site does not exist yet.')}>
           <ControlBarIcon icon={<MdSchool size="32" />} text="Education" />
         </button>
-        <button onClick={() => setComponent('Experience')}>
+        <button onClick={() => alert('WIP: This site does not exist yet.')}>
           <ControlBarIcon icon={<MdWork size="32" />} text="Experience" />
         </button>
-        <button onClick={() => setComponent('Contact')}>
+        <button onClick={() => alert('WIP: This site does not exist yet.')}>
           <ControlBarIcon icon={<MdEmail size="32" />} text="Contact" />
         </button>
       </div>
@@ -129,7 +129,8 @@ function ControlBar() {
             <button
               className="p-2 border-b-2 border-b-surface controlbar-mobile-button"
               onClick={() => {
-                setComponent('Skills'); setStatus(!status);
+                // setComponent('Skills'); setStatus(!status);
+                alert('WIP: This site does not exist yet.');
               }}
             >
               Skills
@@ -137,7 +138,8 @@ function ControlBar() {
             <button
               className="p-2 border-b-2 border-b-surface controlbar-mobile-button"
               onClick={() => {
-                setComponent('Education'); setStatus(!status);
+                // setComponent('Education'); setStatus(!status);
+                alert('WIP: This site does not exist yet.');
               }}
             >
               Education
@@ -145,7 +147,8 @@ function ControlBar() {
             <button
               className="p-2 border-b-2 border-b-surface controlbar-mobile-button"
               onClick={() => {
-                setComponent('Experience'); setStatus(!status);
+                // setComponent('Experience'); setStatus(!status);
+                alert('WIP: This site does not exist yet.');
               }}
             >
               Experience
@@ -153,7 +156,8 @@ function ControlBar() {
             <button
               className="p-2 border-b-2 border-b-secondary controlbar-mobile-button"
               onClick={() => {
-                setComponent('Contact'); setStatus(!status);
+                // setComponent('Contact'); setStatus(!status);
+                alert('WIP: This site does not exist yet.');
               }}
             >
               Contact
@@ -161,7 +165,7 @@ function ControlBar() {
           </div>
         </div>
         )}
-      <div className="h-screen w-screen">
+      <div className="h-screen w-10/12 ml-auto mr-auto">
         {ControlComponent(component)}
       </div>
     </div>
